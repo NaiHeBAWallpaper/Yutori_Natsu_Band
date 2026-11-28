@@ -43,7 +43,8 @@ const subtitleLocales = {
 	Chinese: 'zh-Hans',
 	TraditionalChinese: 'zh-Hant',
 	Japanese: 'ja',
-	Korean: 'ko'
+	Korean: 'ko',
+	Thai: 'th'
 };
 
 const CHARACTER = 'CH0221';
@@ -61,17 +62,18 @@ const AUDIO_DETAIL = [
 				"こ、こっち……こっちだ……せんせ……。"
 			],
 			English: [
-				"This... here... teacher..."
+				"H-Here... Over here, Sensei..."
 			],
 			Chinese: [
-				"这，这里…是这里…老师…。"
+				"唔……我，我在这里……老师……"
 			],
 			TraditionalChinese: [
 				"這，這邊……在這邊……老師……"
 			],
 			Korean: [
 				"여, 여기…… 여기야 선생님……"
-			]
+			],
+			Thai: ["ทางนี้... ทางนี้คุณครู..."]
 		}
 	},
 	{
@@ -81,21 +83,22 @@ const AUDIO_DETAIL = [
 				"いくら探しても見つからなくてぇ……。"
 			],
 			English: [
-				"Ugh... It's inside the drum set... That black, rustling thing...",
-				"No matter how much I search, I can't find it..."
+				"Ugh... It's in the...drum set... A black, rustling, and crawling...thing.",
+				"I've turned this place upside down, and I still can't find it..."
 			],
 			Chinese: [
-				"呜呜…鼓架子里面…有东西…那个东西…黑黑的还在簌簌作响。",
-				"怎么找都找不到…。"
+				"呜……架子鼓里面……有……有个黑黑的，沙沙作响的，还会动的……东西……",
+				"但怎么找都找不到……"
 			],
 			TraditionalChinese: [
-				"嗚嗚…鼓架子裡面…有東西…那個東西…黑黑的還在簌簌作響。",
+				"嗚嗚……就在鼓組的……裡面……又黑又動得沙沙作響的……那傢伙。",
 				"不管怎麼找都找不到……"
 			],
 			Korean: [
-				"드럼 세트 안에 있어요.",
+				"우으… 드럼 세트 안에… 있어… 검고 바스락거리며 움직이는…. 그 녀석이.",
 				"그런데 아무리 뒤져도 찾을 수가 없어……"
-			]
+			],
+			Thai: ["ฮือ... มันอยู่ตรง... ชุดกลอง... เจ้าตัวสีดำๆ... เคลื่อนไหวแล้วมีเสียงแซ่กๆ...","แต่ไม่ว่าฉันจะหายังไง ก็หามันไม่เจอเลย..."]
 		}
 	},
 	{
@@ -105,21 +108,22 @@ const AUDIO_DETAIL = [
 				"銃弾なんかよりよっぽど怖いんだよぉ！？"
 			],
 			English: [
-				"W-what are you saying, teacher!? There's no high school girl in Kivotos who isn't afraid of that!",
-				"It's way scarier than getting shot!?"
+				"Wh-What are you talking about, Sensei?! There's not a single high school girl in Kivotos who wouldn't be scared of that thing!",
+				"It's way scarier than something like a bullet!"
 			],
 			Chinese: [
-				"你，你在说什么呀，老师！？在基沃托斯不怕那个的女子高中生根本就没有的！",
-				"这是比中弹还要更加可怕事情！"
+				"这，这是什么话嘛老师？！在基沃托斯，就没有不怕那种东西的女生！",
+				"它比子弹什么的可怕多了！"
 			],
 			TraditionalChinese: [
-				"你，你在說什麼呀，老師！？在基沃託斯不怕那個的女子高中生根本就沒有的！",
+				"你，你在說什麼啊，老師！？奇普托斯沒有不怕那東西的女高中生好嗎！？",
 				"比子彈什麼的還要恐怖多了好嗎！？"
 			],
 			Korean: [
-				"퀴보토스에는 그런 걸 두려워하지 않는 고등학생이 없어요!",
+				"무, 무슨 소리야 선생님?! 키보토스에 그것을 무서워하지 않는 여고생은 없다고!",
 				"총알 같은 것보다 훨씬 무서운 거라고!"
-			]
+			],
+			Thai: ["พะ... พูดอะไรน่ะคุณครู?! ไม่มีนักเรียนหญิงคนไหนในคิโวทอส ไม่กลัวเจ้านั่นหรอกนะ!","มันน่ากลัวยิ่งกว่า กระสุนปืนอีก!"]
 		}
 	},
 	{
@@ -130,14 +134,14 @@ const AUDIO_DETAIL = [
 				"餌食になってしまう……"
 			],
 			English: [
-				"Ugh, if this continues...",
-				"The limited edition macadamia cookies I worked so hard to get...",
-				"Will become its prey..."
+				"Ugh, at this rate...",
+				"The limited-edition macadamia cookies I worked so hard for...",
+				"...will be lost..."
 			],
 			Chinese: [
-				"呜呜呜，这样下去…",
-				"好不容易入手的限定曲奇就要",
-				"就要进它的嘴了…"
+				"呜呜，这样下去……",
+				"我好不容易到手的限量版夏威夷果曲奇，",
+				"就要变成牺牲品了……"
 			],
 			TraditionalChinese: [
 				"嗚嗚，再這樣下去……",
@@ -148,7 +152,8 @@ const AUDIO_DETAIL = [
 				"우으, 이대로는…",
 				"모처럼 손에 넣은 한정판 마카다미아 쿠키가,",
 				"희생양이 돼버릴 거야…"
-			]
+			],
+			Thai: ["อืม... ถ้าเป็นแบบนี้","คงจะต้องเสียสละ คุกกี้แมคคาเดเมีย","ที่ได้มาไปแน่ๆ เลย..."]
 		}
 	},
 	{
@@ -158,12 +163,12 @@ const AUDIO_DETAIL = [
 				"助けてぇ……。"
 			],
 			English: [
-				"So please, teacher...",
-				"Help me..."
+				"Please, Sensei...",
+				"Save me..."
 			],
 			Chinese: [
-				"所以帮帮我，老师…",
-				"救我…。"
+				"求求你了，老师……",
+				"救救我……"
 			],
 			TraditionalChinese: [
 				"所以拜託你了，老師……",
@@ -172,7 +177,8 @@ const AUDIO_DETAIL = [
 			Korean: [
 				"그러니까 부탁해, 선생님…",
 				"살려줘……"
-			]
+			],
+			Thai: ["เพราะงั้นขอรบกวนด้วยนะ คุณครู...","ช่วยหน่อยเถอะ..."]
 		}
 	}
 ];
@@ -284,7 +290,7 @@ function playVoiceline() {
 			track.play().catch(finish);
 
 			if (dialogBox) {
-				textbox.textContent = dialog[window.selectedLanguage][index];
+				textbox.textContent = getSubtitleText(dialog, window.selectedLanguage, index);
 				textbox.style.opacity = 1;
 			}
 		},
@@ -454,6 +460,16 @@ function setMouse(event) {
 	return { x: ax - canvas.width * positionX, y: ay - canvas.height * positionY };
 }
 
+function getSubtitleText(dialog, language, index) {
+	let text = dialog?.[language]?.[index];
+	if (text == null && language === 'Thai') {
+		language = 'English';
+		text = dialog?.[language]?.[index];
+	}
+	textbox.lang = subtitleLocales[language];
+	return text ?? "";
+}
+
 function updateSubtitleLanguage() {
 	let language = subtitleLanguagePreference;
 	if (language === 'auto') {
@@ -467,6 +483,8 @@ function updateSubtitleLanguage() {
 			language = 'Japanese';
 		} else if (primary === 'ko' || primary === 'korean' || primary === 'koreana') {
 			language = 'Korean';
+		} else if (primary === 'th' || primary === 'thai') {
+			language = 'Thai';
 		} else {
 			language = 'English';
 		}
@@ -476,7 +494,7 @@ function updateSubtitleLanguage() {
 	window.selectedLanguage = language;
 	textbox.lang = subtitleLocales[language];
 	const clip = currentTracks.at(-1);
-	if (dialogBox && clip) textbox.textContent = clip.dialog[language][clip.index];
+	if (dialogBox && clip) textbox.textContent = getSubtitleText(clip.dialog, language, clip.index);
 }
 
 function init() {
